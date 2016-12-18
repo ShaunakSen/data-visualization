@@ -16,11 +16,13 @@ var svg = d3.select("body").append("svg").attr("height","100%").attr("width","10
 // i:3 d:18
 
 
+
+
 svg.selectAll("rect")
       .data(dataArray)
       .enter().append("rect")
                 .attr("height",function(d,i){ return d*15; })
                 .attr("width","50")
-                .attr("fill","pink")
+                .attr("fill","blue")
                 .attr("x",function(d,i){ return 60*i; })
                 .attr("y",function(d,i){ return 200-(d*15); });
